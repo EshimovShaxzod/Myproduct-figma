@@ -17,7 +17,14 @@
     flex-grow: 1;
   }
   
- 
+ body{
+   background-color: $backgroundPrimary;
+ }
+
+ .theme{
+  $backgroundPrimary:#1F2E35;
+  $colorPrimary:#fff;
+}
   
   ol,
   ul {

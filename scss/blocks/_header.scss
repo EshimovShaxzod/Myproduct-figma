@@ -1,0 +1,127 @@
+/* HEADER STYLE START */ 
+.site-header{
+    width: 100%;
+    padding: 23px 0 29px 0;
+    font-family: $fontFamily;
+    
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__logo{
+        display: flex;
+        align-items: center;
+        
+        &-img{
+            width: 40px;
+            height: 37px;
+            margin-right: 16px;
+        }
+        
+        &-title{
+            color: $colorPrimary;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+    
+    &__nav{
+        display: flex;
+        align-items: center;
+        
+        &-list{
+            display: flex;
+            align-items: center;
+        }
+        
+        &-item:not(:last-child){
+            margin-right: 24px;
+        }
+        
+        &-item:last-child{
+            margin-right: 28px;
+        }
+        
+        &-link{
+            color: $colorPrimary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        
+        &-link:active{
+            font-weight: 600;
+        }
+        
+        &-btnIn, &-btnUp{
+            padding: 10px 22px 9px 25px;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            border-radius: 4px;
+            border: 1px solid #BCD0E5;
+            cursor: pointer;
+        }
+        
+        &-btnIn{
+            color: $colorPrimary;
+            background-color: transparent;
+            
+        }
+        
+        &-btnUp{
+            color: #fff;
+            border-radius: 4px;
+            background: #02897A;
+        }
+    }
+    
+    &__menu-btn{
+        display: none;
+        width: 28px;
+        height: 31px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        
+        & i{
+            color: #173A56;
+            font-size: 27px;
+        }
+    }
+}
+/* HEADER STYLE END */ 
+
+/*  HEADER RESPONSIVE STYLE START */ 
+
+@media only screen and (max-width: 576px){
+    .site-header{
+        
+        &__logo{
+            &-img{
+                margin-right: 8px;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:916px){
+    
+    .site-header{
+        box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.25);
+        
+        &__nav{
+            display: none;
+        }
+        
+        &__menu-btn{
+            display: block;
+        }
+    }
+}
+/*  HEADER RESPONSIVE STYLE END */ 
