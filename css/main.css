@@ -23,7 +23,7 @@
 /*# sourceMappingURL=main.css.map */
 * {
   box-sizing: border-box;
-  font-family: 700;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -36,6 +36,10 @@ html {
 
 main {
   flex-grow: 1;
+}
+
+body {
+  background-color: #fff;
 }
 
 ol,
@@ -66,4 +70,105 @@ a {
   max-width: 1137px;
   margin: 0 auto;
   padding: 0 15px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* HEADER STYLE START */
+.site-header {
+  width: 100%;
+  padding: 23px 0 29px 0;
+  font-family: "Poppins", sans-serif;
+}
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header__logo {
+  display: flex;
+  align-items: center;
+}
+.site-header__logo-img {
+  width: 40px;
+  height: 37px;
+  margin-right: 16px;
+}
+.site-header__logo-title {
+  color: #22343D;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.site-header__nav {
+  display: flex;
+  align-items: center;
+}
+.site-header__nav-list {
+  display: flex;
+  align-items: center;
+}
+.site-header__nav-item:not(:last-child) {
+  margin-right: 24px;
+}
+.site-header__nav-item:last-child {
+  margin-right: 28px;
+}
+.site-header__nav-link {
+  color: #22343D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.site-header__nav-link:active {
+  font-weight: 600;
+}
+.site-header__nav-btnIn, .site-header__nav-btnUp {
+  padding: 10px 22px 9px 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 4px;
+  border: 1px solid #BCD0E5;
+  cursor: pointer;
+}
+.site-header__nav-btnIn {
+  color: #22343D;
+  background-color: transparent;
+}
+.site-header__nav-btnUp {
+  color: #fff;
+  border-radius: 4px;
+  background: #02897A;
+}
+.site-header__menu-btn {
+  display: none;
+  width: 28px;
+  height: 31px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.site-header__menu-btn i {
+  color: #173A56;
+  font-size: 27px;
+}
+
+/* HEADER STYLE END */
+/*  HEADER RESPONSIVE STYLE START */
+@media only screen and (max-width: 576px) {
+  .site-header__logo-img {
+    margin-right: 8px;
+  }
+}
+@media only screen and (max-width: 916px) {
+  .site-header {
+    box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+  .site-header__nav {
+    display: none;
+  }
+  .site-header__menu-btn {
+    display: block;
+  }
+}
+/*  HEADER RESPONSIVE STYLE END *//*# sourceMappingURL=main.css.map */
