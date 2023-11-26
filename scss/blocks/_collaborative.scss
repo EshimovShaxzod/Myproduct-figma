@@ -1,0 +1,87 @@
+/*   COLLABORATIVE STYLE START */ 
+.collaborative{
+    width: 100%;
+    margin-bottom: 146px;
+    
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &-content{
+        width: 100%;
+        max-width: 486px;
+        
+        &__text{
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: $colorPrimary;
+        }
+        
+        &__title{
+            margin-bottom: 23px;
+            color: $colorPrimary;
+            font-size: 32px;
+            font-weight: $fontWeight;
+            line-height: normal;
+        }
+        
+        &__small-title{
+            margin-bottom: 12px;
+            color: $colorPrimary;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+        }
+        
+        &__desc{
+            margin-bottom: 25px;
+            color: $colorPrimary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        
+        &__small-desc{
+            margin-bottom: 25px;
+            color: $colorPrimary;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+    
+    &-img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+/*   COLLABORATIVE STYLE END */ 
+
+/* COLLABORATIVE RESPONSIVE STYLE START  */ 
+@media only screen and (max-width:576px){
+    
+    .collaborative{
+        margin-bottom: 97px;
+        
+        &-wrapper{
+            flex-wrap: wrap-reverse;
+        }
+        
+        &-img{
+            margin-bottom: 50px;
+        }
+        
+        &-content{
+            
+            &__title{
+                margin-bottom: 16px;
+            }
+        }
+    }
+    
+}
+/* COLLABORATIVE RESPONSIVE STYLE END  */ 
